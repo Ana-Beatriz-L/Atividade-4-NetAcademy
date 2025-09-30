@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunnydale School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #e0f7fa 0%, #fffde4 100%);
+            color: #333;
+        }
+        header {
+            background: #1E90FF;
+            color: #fff;
+            padding: 0;
+            box-shadow: 0 2px 8px rgba(30,144,255,0.1);
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 24px 10px 16px 10px;
+        }
+        .header-content img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(30,144,255,0.08);
+            padding: 32px 24px;
+        }
+        h2 {
+            margin-top: 32px;
+            font-size: 1.4rem;
+            color: #1E90FF;
+        }
+        #mission-statement {
+            color: #32CD32;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+        #upcoming-events {
+            color: #FFA07A;
+            background-color: #FFFFE0;
+            padding: 8px 16px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        ul.events {
+            list-style: none;
+            padding: 0;
+        }
+        ul.events li {
+            margin-bottom: 10px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            background: #f8f3f3;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(30,144,255,0.04);
+        }
+        .outdoor {
+            background-color: #AFEEEE !important;
+        }
+        .date {
+            font-weight: bold;
+            color: #d32f2f;
+            font-size: 1.05em;
+        }
+        .section {
+            background-color: #f8f3f3;
+            padding: 18px 16px;
+            border-radius: 8px;
+            margin-top: 32px;
+            box-shadow: 0 2px 8px rgba(30,144,255,0.04);
+        }
+        #contact {
+            color: #20B2AA;
+            margin-bottom: 8px;
+        }
+        .contact-info {
+            margin-bottom: 10px;
+        }
+        .contact-btn {
+            background: #1E90FF;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 24px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .contact-btn:hover {
+            background: #32CD32;
+        }
+        .thanks-message {
+            display: none;
+            margin-top: 12px;
+            color: #32CD32;
+            font-weight: bold;
+        }
+        footer {
+            background: #1E90FF;
+            color: #fff;
+            text-align: center;
+            padding: 18px 10px;
+            margin-top: 40px;
+            border-radius: 0 0 16px 16px;
+            font-size: 1rem;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 16px 6px;
+            }
+            .header-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="escola-1.jpg" alt="Logo da Escola">
+        <h1>Sunnydale School</h1>
+    </div>
+</header>
+
+<main>
+    <p style="font-size:1.1rem;">Bem-vindo à Sunnydale School, dedicada a despertar o amor pelo aprendizado em cada estudante.</p>
+    
+    <h2 id="mission-statement">Missão</h2>
+    <p id="mission-statement">Nossa missão é oferecer uma educação de qualidade que prepara todas as crianças para um futuro de sucesso.</p>
+    
+    <h2 id="upcoming-events">Próximos Eventos</h2>
+    <ul class="events">
+        <li>Feira de Ciências <span class="date">10 de Junho</span></li>
+        <li class="outdoor" title="Evento ao ar livre">Exposição de Arte <span class="date">15 de Junho</span></li>
+        <li class="outdoor" data-event-type="outdoor" title="Evento ao ar livre">Dia dos Esportes <span class="date">20 de Junho</span></li>
+    </ul>
+
+    <div class="section">
+        <h2 id="contact">Contato</h2>
+        <div class="contact-info">
+            <p title="Email para contato">Email: info@sunnydaleschool.com</p>
+            <p title="Telefone para contato">Telefone: 555-1234</p>
+        </div>
+    <button class="contact-btn" disabled style="opacity:0.7;cursor:not-allowed;">Entrar em contato</button>
+    <div class="thanks-message" style="display:block; color:#aaa; font-weight:normal;">Clique no botão para entrar em contato (apenas visual)</div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2025 Sunnydale School. Todos os direitos reservados.
+</footer>
+
+
+
+</body>
+</html>
